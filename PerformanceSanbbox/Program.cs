@@ -144,7 +144,7 @@ namespace PerformanceSanbbox
 			performanceCounter.T2 = swVariableTrueIsIsFalse.Elapsed;
 
 			Stopwatch swTrueIsIsVariableTrue = new Stopwatch();
-			swVariableTrueIsIsTrue.Start();
+			swTrueIsIsVariableTrue.Start();
 			for (int i = 0; i < numberOfIterations; i++)
 			{
 				if (true == variableTrue)
@@ -153,12 +153,12 @@ namespace PerformanceSanbbox
 				}
 			}
 
-			swVariableTrueIsIsTrue.Stop();
+			swTrueIsIsVariableTrue.Stop();
 			//T3
-			performanceCounter.T3 = swVariableTrueIsIsTrue.Elapsed;
+			performanceCounter.T3 = swTrueIsIsVariableTrue.Elapsed;
 
 			Stopwatch swFalseIsIsVariableTrue = new Stopwatch();
-			swVariableTrueIsIsFalse.Start();
+			swFalseIsIsVariableTrue.Start();
 			for (int i = 0; i < numberOfIterations; i++)
 			{
 				if (false == variableTrue)
@@ -167,9 +167,9 @@ namespace PerformanceSanbbox
 				}
 			}
 
-			swVariableTrueIsIsFalse.Stop();
+			swFalseIsIsVariableTrue.Stop();
 			//T4
-			performanceCounter.T4 = swVariableTrueIsIsFalse.Elapsed;
+			performanceCounter.T4 = swFalseIsIsVariableTrue.Elapsed;
 
 		}
 
@@ -210,7 +210,7 @@ namespace PerformanceSanbbox
 			performanceCounter.T2 = swVariableFalseIsIsFalse.Elapsed;
 
 			Stopwatch swTrueIsIsVariableFalse = new Stopwatch();
-			swVariableFalseIsIsTrue.Start();
+			swTrueIsIsVariableFalse.Start();
 			for (int i = 0; i < numberOfIterations; i++)
 			{
 				if (true == variableFalse)
@@ -219,12 +219,12 @@ namespace PerformanceSanbbox
 				}
 			}
 
-			swVariableFalseIsIsTrue.Stop();
+			swTrueIsIsVariableFalse.Stop();
 			//T3
-			performanceCounter.T3 = swVariableFalseIsIsTrue.Elapsed;
+			performanceCounter.T3 = swTrueIsIsVariableFalse.Elapsed;
 
 			Stopwatch swFalseIsIsVariableFalse = new Stopwatch();
-			swVariableFalseIsIsFalse.Start();
+			swFalseIsIsVariableFalse.Start();
 			for (int i = 0; i < numberOfIterations; i++)
 			{
 				if (false == variableFalse)
@@ -233,9 +233,9 @@ namespace PerformanceSanbbox
 				}
 			}
 
-			swVariableFalseIsIsFalse.Stop();
+			swFalseIsIsVariableFalse.Stop();
 			//T4
-			performanceCounter.T4 = swVariableFalseIsIsFalse.Elapsed;
+			performanceCounter.T4 = swFalseIsIsVariableFalse.Elapsed;
 
 		}
 	}
